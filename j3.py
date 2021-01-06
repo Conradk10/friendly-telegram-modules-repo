@@ -11,9 +11,9 @@ def register(cb):
 	cb(JacquesThreeMod())
 
 class JacquesThreeMod(loader.Module):
-	"""Жаконизатор V3"""
+	"""Жаконизатор V4"""
 	strings = {
-		'name': 'Катлета Флингера V3',
+		'name': 'Загадка от Жака Фреско v4',
 		'usage': 'ТАК СЛОЖНО НАПИСАТЬ <code>(Ты еблан).help Жаконизатор V3</code> , ты пидарас или пидофил?',
 	}
 	def __init__(self):
@@ -26,7 +26,7 @@ class JacquesThreeMod(loader.Module):
 		self.me = await client.get_me()
 
 	async def j3cmd(self, message):
-		""".j3 <реплай на сообщение/свой текст>\n@TermuxTools_Hacking канал автора :3"""
+		""".j3 <реплай на сообщение/свой текст>\n@TermuxTools_Hacking канал автора :3\nРедизайн сделал @zxvghost666 <3"""
 
 		ufr = requests.get("https://github.com/Conradk10/ftg-modules-repo/blob/master/content/fonts/HelveticaNeueCyr-Bold.ttf?raw=true")
 		f = ufr.content
