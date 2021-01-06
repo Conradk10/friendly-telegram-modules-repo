@@ -42,7 +42,7 @@ class JacquesThreeMod(loader.Module):
 		else:
 			txt = utils.get_args_raw(message)
 		await message.edit("<b>На размышление дается 30 секунд...</b>")
-		pic = requests.get("https://github.com/Conradk10/ftg-modules-repo/blob/master/content/images/zagadka-zhak-fresko.jpg?raw=true")
+		pic = requests.get("https://github.com/Conradk10/ftg-modules-repo/blob/master/content/images/zagadka-zhak-fresko2.jpg?raw=true")
 		pic.raw.decode_content = True
 		img = Image.open(io.BytesIO(pic.content)).convert("RGB")
 
@@ -57,8 +57,8 @@ class JacquesThreeMod(loader.Module):
 		imtext = Image.new("RGBA", (w+50, h+50), (0, 0,0,0))
 		draw = ImageDraw.Draw(imtext)
 		draw.multiline_text((40, 40),t,(225,225,225),font=font, align='left')
-		imtext.thumbnail((800, 540))
-		w, h = 800, 540
+		imtext.thumbnail((450, 330))
+		w, h = 450, 330
 		img.paste(imtext, (2,100), imtext)
 		out = io.BytesIO()
 		out.name = "@sad0ff.jpg"
