@@ -2,7 +2,7 @@ from .. import loader
 from asyncio import sleep
 @loader.tds
 class HeartsMod(loader.Module):
-	strings = {"name": "Heart's (fix)"}
+	strings = {"name": "Heart's"}
 	@loader.owner
 	async def heartscmd(self, message):
 		for _ in range(10):
