@@ -41,7 +41,7 @@ class JacquesThreeMod(loader.Module):
 				txt = reply.raw_text
 		else:
 			txt = utils.get_args_raw(message)
-		await message.edit("<b>1На размышление дается 30 секунд...</b>")
+		await message.edit("<b>На размышление дается 30 секунд...</b>")
 		pic = requests.get("https://github.com/Conradk10/ftg-modules-repo/blob/master/content/images/zagadka-zhak-fresko2.jpg?raw=true")
 		pic.raw.decode_content = True
 		img = Image.open(io.BytesIO(pic.content)).convert("RGB")
