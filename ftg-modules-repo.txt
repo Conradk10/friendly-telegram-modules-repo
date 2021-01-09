@@ -9,7 +9,6 @@ https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/av.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/Ava.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/BackupMan.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/calendar.py
-https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/casino.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/chat.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/chatinfo.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/CheckerTG.py
@@ -28,13 +27,11 @@ https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/FuckChat.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/gird.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/Glitcher.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/hiddentag.py
-https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/hyi.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/imngr.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/impostor.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/j3.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/jg8mh.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/jpeg.py
-https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/mch.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/module.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/nedoquotes.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/nklf.py
@@ -43,9 +40,6 @@ https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/ownerships.p
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/ph.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/pung.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/QRtools.py
-https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/reverse.py
-https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/rip.py
-https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/rip.yt.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/saver.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/SquareBlur.py
 https://raw.githubusercontent.com/Conradk10/ftg-modules-repo/master/stata.py
