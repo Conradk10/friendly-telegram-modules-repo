@@ -120,7 +120,7 @@ class AntiMentionMod(loader.Module):
                         elif ac[chatid]["action"] == "ban":
                             await message.client(EditBannedRequest(int(chatid), userid, ChatBannedRights(until_date=None, view_messages=True)))
                         elif ac[chatid]["action"] == "mute":
-                            await event.client(EditBannedRequest(int(chatid), user.id, ChatBannedRights(until_date=True, send_messages=True))) 
+                            await message.client(EditBannedRequest(int(chatid), userid, ChatBannedRights(until_date=True, send_messages=True))) 
                         else: pass
                     except: pass 
                     await message.client.delete_messages(int(chatid), message.id)

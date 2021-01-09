@@ -163,8 +163,10 @@ async def get_audio(m, reply, pref):
     if reply:
         if reply.file:
             if reply.file.mime_type.split("/")[0] == "audio":
-                voice = reply.document.attributes[0].voice
-                duration = reply.document.attributes[0].duration
+                try: voice = reply.document.attributes[0].voice
+                except: voice = False
+                try: duration = reply.document.attributes[0].duration
+                except: duration = 260
                 await m.edit(f"[{pref}] Скачиваю...")
                 audio = AudioSegment.from_file(io.BytesIO(await reply.download_media(bytes)))
                 return (audio, voice, duration)
