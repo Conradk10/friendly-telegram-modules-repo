@@ -1,18 +1,17 @@
 from .. import loader, utils
 from requests import get
 import io
-from telethon.tl.types import MessageEntityUrl, MessageEntityTextUrl
 import os
 
 class aMod(loader.Module):
-	strings = {"name": "UrlDl"}
-	
+	strings = {"name": "Жабоунижатор"}
+
 	async def urldlcmd(self, event):
 		await downloading(event)
 	async def urldlbigcmd(self, event):
 		await downloading(event, True)
-	
-		
+
+
 
 async def downloading(event, big=False):
 	args = utils.get_args_raw(event)
@@ -24,11 +23,11 @@ async def downloading(event, big=False):
 		message = reply
 	else:
 		message = event
-	
+
 	if not message.entities:
 		await event.edit("<b>Ссылки нету!</b>")
 		return
-	
+
 	urls = []
 	for ent in message.entities:
 		if type(ent) in [MessageEntityUrl, MessageEntityTextUrl]:
@@ -42,7 +41,7 @@ async def downloading(event, big=False):
 			if not url.startswith("http"):
 				url = "http://"+url
 			urls.append(url)
-			
+
 	if not urls:
 		await event.edit("<b>Ссылки нету!</b>")
 		return
@@ -65,9 +64,8 @@ async def downloading(event, big=False):
 				file.seek(0)
 				await event.edit("<b>Отправка...</b>\n"+url)
 				await event.client.send_file(event.to_id, file, reply_to=reply)
-			
+
 		except Exception as e:
 			await event.reply("<b>Ошибка при загрузке!</b>\n"+url+"\n<code>"+str(e)+"</code>")
-	
+
 	await event.delete()
-	
