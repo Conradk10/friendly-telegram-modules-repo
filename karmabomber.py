@@ -20,7 +20,7 @@ class KarmaBomberMod(loader.Module):
         reply = await message.get_reply_message()
         symbol = '+'
         if not reply: return await message.edit("А кого плюсовать то?")
-        await message.edit("Соглы!")
+        await message.edit("+")
         if not a.match(args):
             args = 1
         for i in range(int(args)):
@@ -28,7 +28,6 @@ class KarmaBomberMod(loader.Module):
             await sleep(0.2)
             await message.client.delete_messages(message.chat.id, m.id)
             await sleep(1)
-        return await message.delete()
 
     async def minuscmd(self, message):
         """Минусует юзера на которого реплай\nИспользование: .minus <n>; ничего"""
@@ -37,7 +36,7 @@ class KarmaBomberMod(loader.Module):
         reply = await message.get_reply_message()
         symbol = '-'
         if not reply: return await message.edit("А кого минусовать то?")
-        await message.edit("Не соглы!")
+        await message.edit("-")
         if not a.match(args):
             args = 1
         for i in range(int(args)):
@@ -45,4 +44,3 @@ class KarmaBomberMod(loader.Module):
             await sleep(0.2)
             await message.client.delete_messages(message.chat.id, m.id)
             await sleep(1)
-        return await message.delete()
