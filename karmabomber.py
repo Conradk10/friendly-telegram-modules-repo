@@ -35,7 +35,7 @@ class KarmaBomberMod(loader.Module):
         args = utils.get_args_raw(message)
         a = re.compile(r"^\d+$")
         reply = await message.get_reply_message()
-        symbol = '+'
+        symbol = '-'
         if not reply: return await message.edit("А кого минусовать то?")
         await message.edit("Не соглы!")
         if not a.match(args):
